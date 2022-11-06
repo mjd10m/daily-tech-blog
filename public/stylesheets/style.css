@@ -1,0 +1,20 @@
+.text-peach {
+    color: peachpuff ;
+}
+
+.bg-royal {
+    background-color: royalblue;
+}
+
+.border-custom{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.bg-peach {
+    background-color: peachpuff;
+}
+
+.text-royal {
+    color: royalblue;
+}
