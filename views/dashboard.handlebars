@@ -29,11 +29,11 @@
     </div>
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
+  <h2 class="text-center">Your Posts</h2>
     {{#each posts as |post|}}
       {{> post-info post}}
     {{/each}}
 </section>
 {{/if}}
 <script src="/javascript/create-post.js"></script>
-<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/edit-post-qs.js"></script>

@@ -1,0 +1,17 @@
+<div>
+{{> post-info post}}
+</div>
+{{> comments post.comments}}
+{{#if loggedIn}}
+<div class="row bg-peach justify-content-center pb-3"  id="comment">
+    <div class="col-9">
+        <input type="text" id="comment-text" class="col-12">
+    </div>
+    <div class="col-auto">
+        <button type="submit" id="{{id}}" class="btn bg-royal text-peach mb-3 mb-3 comment">Add Comment</button>
+    </div>
+</div>
+{{/if}}
+{{#if loggedIn}}
+<script src="/javascript/create-comment.js"></script>
+{{/if}}

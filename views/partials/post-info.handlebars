@@ -1,5 +1,5 @@
 
-<div class="row mx-5 my-5" id="post" data-post_id="{{id}}">
+<div class="row mx-5 my-5 post" id="{{id}}">
     <div class="col-12 border-custom">
         <div class="row bg-royal">
             <div class="col-6">
@@ -11,9 +11,19 @@
         </div>
         <div class="row bg-peach">
             <div class="col-12">
-                <p class="text-royal"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-royal">{{text}}</p>
             </div>
         </div>
-        {{> comments post.comments}}
+        <!--{{> comments post.comments}}
+        <div class="row bg-peach justify-content-center pb-3"  id="comment">
+            <div class="col-9">
+                <input type="text" id="comment-text" class="col-12">
+            </div>
+            <div class="col-auto">
+                <button type="submit" id="{{id}}" class="btn bg-royal text-peach mb-3 mb-3 comment">Add Comment</button>
+            </div>
+        </div>-->
+        
     </div>
 </div>
+<!--<script src="/javascript/create-comment.js"></script>-->
