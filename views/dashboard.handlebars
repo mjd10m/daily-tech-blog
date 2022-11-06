@@ -1,0 +1,39 @@
+<div class="container-fluid mt-3">
+        <div class="row mx-5 my-5 justify-content-center">
+            <div class="col-6 border-custom">
+                <div class="row bg-royal">
+                    <div class="col">
+                        <h3 class="text-peach text-center"> Create Post</h3>
+                    </div>
+                </div>
+                <div class="row bg-peach">
+                    <div class="col">
+                        <form id="create-post-form">
+                            <div class="mb-3">
+                                <label for="title" class="form-label text-royal">Enter Title of Post</label>
+                                <input type="text" class="form-control" id="post-title">
+                            </div>
+                            <div class="mb-3">
+                              <label for="user-email" class="form-label text-royal col-12">Enter Post</label>
+                              <textarea rows="7" id="post-text" class="col-12"></textarea>
+
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" id="create-post" class="btn bg-royal text-peach mb-3 mb-3">Create Post</button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+    {{#each posts as |post|}}
+      {{> post-info post}}
+    {{/each}}
+</section>
+{{/if}}
+<script src="/javascript/create-post.js"></script>
+<script src="/javascript/edit-post.js"></script>

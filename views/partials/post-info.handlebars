@@ -1,0 +1,19 @@
+
+<div class="row mx-5 my-5" id="post" data-post_id="{{id}}">
+    <div class="col-12 border-custom">
+        <div class="row bg-royal">
+            <div class="col-6">
+                <h3 class="text-peach"> {{title}}</h3>
+            </div>
+            <div class="col-6">
+                <p class="text-peach text-end"> Post by {{user.username}} on {{format_date created_at}}</p>
+            </div>
+        </div>
+        <div class="row bg-peach">
+            <div class="col-12">
+                <p class="text-royal"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        {{> comments post.comments}}
+    </div>
+</div>

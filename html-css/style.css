@@ -18,3 +18,10 @@
 .text-royal {
     color: royalblue;
 }
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
